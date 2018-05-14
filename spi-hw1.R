@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-# prvni soubor
-file1 <- readLines("/home/zeel/Documents/SPI/hw1_source/001.txt")
-=======
 #### 1
 # nacteni soubrou
-file1 <- readLines("/home/samik/Downloads/hw1_source/001.txt")
-file2 <- readLines("/home/samik/Downloads/hw1_source/002.txt")
->>>>>>> ead1debc0533b181b666a5431111f29b3415bfe3
+file1 <- readLines("data/hw1_source/001.txt")
+file2 <- readLines("data/hw1_source/002.txt")
 
 # rozdeleni textu na slova
 splitted = strsplit(file1[2], " +")
@@ -21,21 +16,7 @@ mean(lengths1)
 var(lengths1)
 hist(lengths1)
 
-<<<<<<< HEAD
-
-chars1 <- strsplit(gsub(" ", "", file1[2] , fixed = TRUE), "")
-t1 <- table(chars1)
-plot(prop.table(t1))
-
-# druhy soubor
-file2 <- readLines("/home/zeel/Documents/SPI/hw1_source/002.txt")
-
-splitted2 = strsplit(file2[2], " +")
-lengths2 = unlist(Map(function(x) nchar(x), splitted2))
-
-=======
 # zakladni hodnoty a histogram souboru 2
->>>>>>> ead1debc0533b181b666a5431111f29b3415bfe3
 mean(lengths2)
 var(lengths2)
 hist(lengths2)
