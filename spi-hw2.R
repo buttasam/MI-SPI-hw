@@ -28,7 +28,7 @@ Ac <- rbind(Ab, rep(1, col_num))
 Bc <- c(Bb, 1)
 # solve matice
 p2 <- t(solve(t(Ac)%*%Ac, t(Ac)%*%Bc))
-barplot(p2%*%tm)
+barplot(p2)
 
 ### 4
 t.test(p1, p2)
